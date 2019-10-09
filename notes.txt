@@ -1,0 +1,59 @@
+Notas
+
+Estimator for classification
+  fit(X, y)
+  predict(T)
+
+Grid search or Cross-validation to find best gamma value for SVC (support vector classification)
+
+Training set : ex.: all but the last  element of the array = a[:-1]
+
+clf.fit(data[], target[]) --> for training
+clf.preditct(data[]) --> for predictions (eg. using the array last element )
+
+To load external data:
+
+https://scikit-learn.org/stable/datasets/index.html#external-datasets
+
+pands.io to read from csv, excel, json, sql to DataFrame
+numpy/routines.io --> standard loading of columnar data into numpy arrays
+sklearn/datasets.load_svmlight_file
+sklearn/datasets.load_files --> each directory is a category, each file is a sample
+skimage.io or Imageio for loading images and videos into numpy arrays
+string and categorical must be converted to numerical
+    sklearn.preprocessing.OneHotEncoder or sklearn.preprocessing.OrdinalEncoder
+
+*** recommended to use an optimized file format such as HDF5 to reduce data load times.
+Libraries: H5Py, PyTables and pandas
+
+*** It is possible to save a model in scikit-learn by using Python’s built-in persistence model
+    pickle library (dumps, loads)
+    joblib.dump, load
+
+
+cat and dog samples
+https://thecodacus.com/prepare-data-set-train-tensorflow-model/
+kaggle has many data samples !!!
+https://www.kaggle.com/c/dogs-vs-cats/data =))
+
+pip install kaggle
+
+
+https://github.com/Kaggle/kaggle-api
+
+kaggle competitions {list, files, download, submit, submissions, leaderboard}
+kaggle datasets {list, files, download, create, version, init}
+kaggle kernels {list, init, push, pull, output, status}
+kaggle config {view, set, unset}
+
+kaggle API key --> SAVE --> user/estol/.kaggle
+
+kaggle competitions download -c dogs-vs-cats
+proxy! =|
+
+
+
+
+
+
+
